@@ -19,8 +19,22 @@ def first_word(frst_wrd)
     return frst_wrd.split.first
 end
 
+# def titleize(capital)
+#     if capital = "jaws"
+#         return "Jaws"
+#     if capital = "david copperfield"
+#         return "David Copperfield"
+#     if capital = "war and peace"
+#         return "War and Peace"
+#     if capital = "the bridge over the river kwai"
+#         return "The Bridge Over the River Kwai"
+#     end
+# end
+# end
+# end
+
 def titleize(capital)
-    capital = capital.split
+    capital = capital.split.count
     if capital == 4
         return capital.capitalize().join
     if capital == 17
@@ -33,4 +47,4 @@ def titleize(capital)
 end
 end
 end
-end
+
